@@ -9,7 +9,7 @@ def main():
                          username='YOUR_USER_NAME', password='YOUR_PASSWORD')
 
     subreddit = reddit.subreddit('AskReddit')
-    for submission in subreddit.stream.submissions():
+    for submission in subreddit.stream.submissions(): # please add a rate limit. reddit servers will suffer otherwise. be civil.
         process_submission(submission)
 
 
